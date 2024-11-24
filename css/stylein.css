@@ -9,6 +9,9 @@ body {
     background-color: #F5F5F5;
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
+
+    padding: 0 1em;
 }
 
 header {
@@ -59,7 +62,7 @@ header {
 
 .logo-img {
     width: 70px;
-    height: 70px;
+    height: auto;
     border-radius: 30%;
     margin-right: 10px;
     object-fit: cover;
@@ -254,7 +257,7 @@ nav {
 
 .general-2 {
     background-image: url(../imagenesi/inicio/pro1.jpg);
-    background-position: center center;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -263,7 +266,7 @@ nav {
 
 .general-3 {
     background-image: url(../imagenesi/inicio/jug2.jpg);
-    background-position: center center;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -278,7 +281,7 @@ nav {
 
 .general-5 {
     background-image: url(../imagenesi/inicio/rese3.jpg);
-    background-position: center center;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -287,7 +290,7 @@ nav {
 
 .general-6 {
     background-image: url(../imagenesi/inicio/nos4.jpg);
-    background-position: center center;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -296,7 +299,7 @@ nav {
 
 .general-7 {
     background-image: url(../imagenesi/inicio/con5.jpg);
-    background-position: center center;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -345,28 +348,13 @@ nav {
         padding: 10px 2%;
     }
 
-    .logo-container {
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
+    .logo {
+        font-size: 1.5rem;
     }
 
     .menu {
         flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu li {
-        margin: 5px 0;
-    }
-
-    .menu a {
-        font-size: 18px;
+        align-items: center;
     }
 
     .contenedor {
@@ -374,183 +362,66 @@ nav {
         align-items: center;
     }
 
-    .Servicio {
-        width: 90%;
-        margin-bottom: 20px;
-    }
     .slider {
         height: auto; /* Permitir ajuste automático de altura */
     }
 
-    .slides {
-        display: flex;
-        flex-direction: column; /* Asegura el ajuste vertical si es necesario */
-    }
-
     .slider img {
-        height: auto; /* Mantener la proporción de la imagen */
-        object-fit: cover; /* Adaptar al contenedor */
+        height: auto; /* Mantener proporción */
+        object-fit: cover;
     }
 
-    .slider .prev,
-    .slider .next {
-        font-size: 18px; /* Reducir tamaño de los botones */
-        padding: 5px; /* Hacerlos más pequeños */
+    .general {
+        flex-direction: column;
     }
-}
-
-@media (max-width: 480px) {
-    .float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-        font-size: 25px;
+    .general-2, .general-3, .general-5, .general-6, .general-7 {
+        width: 100%; /* Ancho completo */
+        height: 200px; /* Altura ajustada */
     }
-
-    .logo {
-        font-size: 150%;
-    }
-
-    .logo-img {
-        width: 50px;
-        height: 50px;
-    }
-
-    #Servicios h3 {
-        font-size: 2rem;
-    }
-
-    form {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    form input[type="text"], form input[type="email"], form input[type="tel"] {
-        font-size: 14px;
-    }
-
-    form input[type="submit"] {
-        font-size: 16px;
-    }
-
-    .map-container {
-        height: 200px;
-    }
-
-    .persona h4 {
-        font-size: 16px;
-    }
-
-    .persona p {
-        font-size: 12px;
-    }
-    .slider {
-        height: auto; /* Permitir ajuste automático de altura */
-    }
-
-    .slides {
-        display: flex;
-        flex-direction: column; /* Asegura el ajuste vertical si es necesario */
-    }
-
-    .slider img {
-        height: auto; /* Mantener la proporción de la imagen */
-        object-fit: cover; /* Adaptar al contenedor */
-    }
-
-    .slider .prev,
-    .slider .next {
-        font-size: 18px; /* Reducir tamaño de los botones */
-        padding: 5px; /* Hacerlos más pequeños */
-    }
-
-}
-
-/* Ajustes adicionales para pantallas grandes */
-@media (min-width: 1200px) {
-    .contenedor {
-        padding: 50px 15%;
-    }
-
-    .Servicio {
-        width: 20%;
+    .general-1, .general-4 {
+        width: 90%; /* Se adapta al ancho disponible */
+        padding: 20px; /* Espaciado interno para mejor presentación */
     }
 }
 @media (max-width: 480px) {
     header {
         flex-wrap: wrap;
         justify-content: center;
-        padding: 15px 5%;
+        padding: 10px 5%;
         height: auto;
     }
 
     .logo {
-        font-size: 120%;
-    }
-
-    .logo-container {
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .logo-img {
-        width: 40px;
-        height: 40px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
+        font-size: 1.2rem;
     }
 
     .menu {
         flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu li {
-        margin: 5px 0;
+        align-items: center;
     }
 
     .menu a {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 14px;
+        padding: 8px 15px;
     }
 
-    .float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-        font-size: 20px;
+    .slider {
+        height: auto;
     }
 
-    #Servicios h3 {
-        font-size: 1.5rem;
-    }
-
-    .contenedor {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 5%;
+    .slider img {
+        width: 100%;
+        height: auto;
     }
 
     .general {
         flex-direction: column;
+        padding: 10px;
     }
 
     .general-1, .general-4 {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .general-2, .general-3, .general-5, .general-6, .general-7 {
-        width: 90%;
-        height: 200px;
-        background-size: cover;
-        margin-bottom: 10px;
+        width: 90%; /* Se adapta al ancho disponible */
+        padding: 20px; /* Espaciado interno para mejor presentación */
     }
 
     .btn-1 {
@@ -559,30 +430,11 @@ nav {
     }
 
     .piepag {
-        padding: 10px 0;
+        padding: 10px;
+        font-size: 14px;
     }
-
-    .piepag h2 {
-        font-size: 18px;
-    }
-    .slider {
-        height: auto; /* Permitir ajuste automático de altura */
-    }
-
-    .slides {
-        display: flex;
-        flex-direction: column; /* Asegura el ajuste vertical si es necesario */
-    }
-
-    .slider img {
-        height: auto; /* Mantener la proporción de la imagen */
-        object-fit: cover; /* Adaptar al contenedor */
-    }
-
-    .slider .prev,
-    .slider .next {
-        font-size: 18px; /* Reducir tamaño de los botones */
-        padding: 5px; /* Hacerlos más pequeños */
+    .general-2, .general-3, .general-5, .general-6, .general-7 {
+        width: 100%;
+        height: 150px; /* Altura menor para pantallas pequeñas */
     }
 }
-
