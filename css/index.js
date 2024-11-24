@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded",'resize', function () {
     const slides = document.querySelector('.slides');
     const prev = document.querySelector('.prev');
     const next = document.querySelector('.next');
@@ -28,4 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     next.addEventListener('click', showNextSlide);
     prev.addEventListener('click', showPrevSlide);
+    let sliderWidth = slider.offsetWidth;
+    slides.style.width = `${sliderWidth * images.length}px`;
+    images.forEach(img => {
+        img.style.width = `${sliderWidth}px`;
+        img.style.height = `auto`;})
 });
+
