@@ -436,3 +436,92 @@ nav {
         width: 20%;
     }
 }
+@media (max-width: 480px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 5%;
+        height: auto;
+    }
+
+    .logo {
+        font-size: 120%;
+    }
+
+    .logo-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
+
+    #Servicios h3 {
+        font-size: 1.5rem;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5%;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1, .general-4 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .general-2, .general-3, .general-5, .general-6, .general-7 {
+        width: 90%;
+        height: 200px;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+
+    .btn-1 {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .piepag {
+        padding: 10px 0;
+    }
+
+    .piepag h2 {
+        font-size: 18px;
+    }
+}
