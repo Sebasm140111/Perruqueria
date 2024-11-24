@@ -63,6 +63,8 @@ header {
     border-radius: 30%;
     margin-right: 10px;
     object-fit: cover;
+    max-width: 100%;
+    display: block;
 }
 .logo a {
     text-decoration: none;
@@ -386,7 +388,6 @@ nav {
     }
 
     .slider img {
-        width: 100%;
         height: auto; /* Mantener la proporción de la imagen */
         object-fit: cover; /* Adaptar al contenedor */
     }
@@ -454,7 +455,6 @@ nav {
     }
 
     .slider img {
-        width: 100%;
         height: auto; /* Mantener la proporción de la imagen */
         object-fit: cover; /* Adaptar al contenedor */
     }
@@ -575,7 +575,6 @@ nav {
     }
 
     .slider img {
-        width: 100%;
         height: auto; /* Mantener la proporción de la imagen */
         object-fit: cover; /* Adaptar al contenedor */
     }
