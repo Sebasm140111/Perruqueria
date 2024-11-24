@@ -376,6 +376,26 @@ nav {
         width: 90%;
         margin-bottom: 20px;
     }
+    .slider {
+        height: auto; /* Permitir ajuste automático de altura */
+    }
+
+    .slides {
+        display: flex;
+        flex-direction: column; /* Asegura el ajuste vertical si es necesario */
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto; /* Mantener la proporción de la imagen */
+        object-fit: cover; /* Adaptar al contenedor */
+    }
+
+    .slider .prev,
+    .slider .next {
+        font-size: 18px; /* Reducir tamaño de los botones */
+        padding: 5px; /* Hacerlos más pequeños */
+    }
 }
 
 @media (max-width: 480px) {
@@ -424,6 +444,27 @@ nav {
     .persona p {
         font-size: 12px;
     }
+    .slider {
+        height: auto; /* Permitir ajuste automático de altura */
+    }
+
+    .slides {
+        display: flex;
+        flex-direction: column; /* Asegura el ajuste vertical si es necesario */
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto; /* Mantener la proporción de la imagen */
+        object-fit: cover; /* Adaptar al contenedor */
+    }
+
+    .slider .prev,
+    .slider .next {
+        font-size: 18px; /* Reducir tamaño de los botones */
+        padding: 5px; /* Hacerlos más pequeños */
+    }
+
 }
 
 /* Ajustes adicionales para pantallas grandes */
@@ -520,6 +561,32 @@ nav {
     .piepag {
         padding: 10px 0;
     }
+
+    .piepag h2 {
+        font-size: 18px;
+    }
+    .slider {
+        height: auto; /* Permitir ajuste automático de altura */
+    }
+
+    .slides {
+        display: flex;
+        flex-direction: column; /* Asegura el ajuste vertical si es necesario */
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto; /* Mantener la proporción de la imagen */
+        object-fit: cover; /* Adaptar al contenedor */
+    }
+
+    .slider .prev,
+    .slider .next {
+        font-size: 18px; /* Reducir tamaño de los botones */
+        padding: 5px; /* Hacerlos más pequeños */
+    }
+}
+
 
     .piepag h2 {
         font-size: 18px;
